@@ -160,6 +160,13 @@ body {
     text-decoration: underline; /* Garis bawah saat hover */
 }
 
+@media only screen and (max-width: 768px) {
+    body {
+        background-size: cover; /* Tetap menutupi seluruh area */
+        background-position: center; /* Memposisikan gambar di tengah */
+    }
+}
+
 /* Media Queries */
 @media (max-width: 100px) {
     .footer {
