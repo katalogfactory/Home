@@ -12,8 +12,6 @@ body {
     background-position: center; /* Memposisikan gambar di tengah */
     background-repeat: no-repeat; /* Menghindari pengulangan gambar */
 }
-}
-
 .main-content {
     flex: 1; /* Membiarkan konten utama mengambil ruang yang tersisa */
     max-width: 1200px; /* Lebar maksimum */
