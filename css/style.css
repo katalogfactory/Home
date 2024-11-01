@@ -7,10 +7,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url('img/Background.jpg'); /* Ganti dengan jalur gambar Anda */
-    background-size: cover; /* Memastikan gambar menutupi seluruh area */
-    background-position: center; /* Memposisikan gambar di tengah */
-    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
 }
 .background-image {
     position: absolute; /* Mengatur posisi gambar latar belakang */
