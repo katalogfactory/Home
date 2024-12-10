@@ -1,4 +1,4 @@
- * {
+        * {
   padding: 0;
   margin: 0;
 }
@@ -9,31 +9,40 @@ body {
 }
 
 nav {
-  display: flex; /* Menggunakan Flexbox */
-  align-items: right; /* Menyelaraskan item secara vertikal */
-  vertical-align: middle;
-  justify-content: space-between; /* Menyebar item */
-  padding: 1rem 2rem; /* Padding navbar */
-  background: #000000; /* Warna latar belakang */
-}
-nav h2 {
-    font-size:4vw;
-    color: #ffffff;
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10px;
 }
 nav ul {
-  display: flex; /* Mengatur daftar sebagai flex */
-  flex-direction: row;
-  list-style: none; /* Menghilangkan bullet */
-  font-size: 3vw;
+display: inline-block;
+list-style: none;
+margin: 0;
+padding: 0px 20px;
 }
 
 nav li {
-  padding-left: 1rem; /* Padding untuk item */
+display: inline;
+align-items: end;
 }
 
 nav a {
-  text-decoration: none; /* Menghilangkan garis bawah */
-  color: #ffffff; /* Warna tautan */
+color: white;
+text-decoration: none;
+padding: 0px 15px;
+}
+
+nav a:hover {
+
+color: #008cff;
+
+}
+nav h1 {
+    font-size:17px;
+    color: #ffffff;
+    margin-right: auto;
 }
 
 .main-content {
@@ -61,7 +70,7 @@ nav a {
   
   .header h1 {
     margin: 0;
-    font-size: 5vw;
+    font-size: 20px;
   }
   
   .catalog-grid {
@@ -78,7 +87,7 @@ nav a {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     flex: 1 1 calc(25% - 20px); /* 4 items in a row with a gap */
-    max-width: calc(25% - 20px);
+    max-width: calc(25% - 10px);
   }
   .catalog-card:hover {
     cursor: pointer;
@@ -94,7 +103,7 @@ nav a {
   }
   
   .catalog-card h2 {
-    font-size: 2vw;
+    font-size: 14px;
     margin: 15px 0;
     padding: 0 10px;
     line-height: 1.4;
@@ -119,7 +128,9 @@ nav a {
 .welcome-text {
   margin-top: 10px;
   text-align: center;
-  font-size: 3.3vw;
+  font-size: 16px;
+  background-color: #ffffff;
+  border-radius: 8px;
 }
 
 .right-section {
@@ -150,17 +161,17 @@ nav a {
 
 .news-box p, .contact-box p {
   margin: 0px 0;
-  font-size: 2vw;
+  font-size: 13px;
   line-height: 1.5;
 }
 
 .contact-box p {
-  font-size: 2vw;
+  font-size: 13px;
 }
 
   .footer {
     display: flex;
-    font-size: 2vw;
+    font-size: 12px;
     flex-direction: column;
     background-color: #000;
     color: #fff;
@@ -175,15 +186,24 @@ nav a {
   75%  {background-color:green;}
   100% {background-color:rgb(0, 140, 255);}
 /* Perangkat ekstra kecil (ponsel, 600px dan ke bawah) */
-@media only screen and (max-width: 600px){
+  @media only screen and (max-width: 600px) {
   nav {
-    flex-direction: column; /* Mengubah arah menjadi kolom */
-  }
+    flex-direction: row; /* Mengubah arah menjadi kolom */
   nav ul {
-    flex-direction: column; /* Mengubah daftar menjadi kolom */
-    padding-top: 0.5rem; /* Padding atas */
+    flex-direction: row; /* Mengubah daftar menjadi kolom */
+    padding-top: 0rem; /* Padding atas */
   }
-  nav li {
-    padding: 0.5rem 0; /* Padding untuk item */
   }
 }
+@media only screen and (max-width: 600px) {
+  /* For mobile phones: */
+  .catalog-card {
+    flex: 1 1 calc(50% - 20px); /* 4 items in a row with a gap */
+    max-width: calc(50% - 10px);
+  }
+}
+
+  nav li {
+    padding: 0.5rem 0; /* Padding untuk item */
+    font-size: 14px;
+  }
