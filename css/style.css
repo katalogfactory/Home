@@ -35,7 +35,7 @@ padding: 0px 15px;
 }
 nav h1 {
     font-size:17px;
-    color: #ffffff;
+    color: white;
     margin-right: auto;
 }
 
@@ -187,8 +187,11 @@ nav h1 {
     flex-direction: row; /* Mengubah daftar menjadi kolom */
     padding-top: 0rem; /* Padding atas */
   }
+
+  nav li {
+    padding: 0.5rem 0; /* Padding untuk item */
+    font-size: 14px;
   }
-}
 @media only screen and (max-width: 600px) {
   /* For mobile phones: */
   .catalog-card {
@@ -196,8 +199,3 @@ nav h1 {
     max-width: calc(50% - 10px);
   }
 }
-
-  nav li {
-    padding: 0.5rem 0; /* Padding untuk item */
-    font-size: 14px;
-  }
