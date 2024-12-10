@@ -20,7 +20,7 @@ nav ul {
 display: inline-block;
 list-style: none;
 margin: 0;
-padding: 0px 20px;
+padding: 0px 15px;
 }
 
 nav li {
@@ -32,12 +32,6 @@ nav a {
 color: white;
 text-decoration: none;
 padding: 0px 15px;
-}
-
-nav a:hover {
-
-color: #008cff;
-
 }
 nav h1 {
     font-size:17px;
